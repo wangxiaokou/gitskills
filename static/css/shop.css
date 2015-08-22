@@ -1,0 +1,20 @@
+.shop_header {
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  color: #eb608f;
+  font-size: 18.75px; }
+
+.content .shop_show {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 30px 0; }
+  .content .shop_show img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%; }
+
+/*# sourceMappingURL=shop.css.map */
