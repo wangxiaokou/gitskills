@@ -1,3 +1,6 @@
+p {
+  margin: 0; }
+
 .pink {
   color: #eb608f !important; }
 
@@ -7,13 +10,24 @@
 .gray_bg {
   background: #f8f8f8; }
 
+.ready_star {
+  font-size: 12.5px;
+  margin-right: 3px;
+  color: #fbb84f; }
+
+.star {
+  font-size: 12.5px;
+  margin-right: 3px;
+  color: #737373; }
+
 .shop_header {
   height: 52px;
   line-height: 52px;
   text-align: center;
   color: #eb608f;
   font-size: 18.75px;
-  position: relative; }
+  position: relative;
+  background: #fff; }
   .shop_header .to_shop {
     font-size: 15px;
     background: #fff;
@@ -272,6 +286,166 @@
         float: right; }
       .content .shop_order_info .shop_order_msg li .big {
         font-size: 16.25px; }
+  .content .shop_order_info .shop_order_ads {
+    padding: 15.5px 0 48.75px; }
+    .content .shop_order_info .shop_order_ads h2 {
+      font-size: 15px;
+      color: #737373;
+      font-weight: normal;
+      padding-bottom: 5px; }
+    .content .shop_order_info .shop_order_ads li {
+      border-bottom: 1px solid #fff;
+      line-height: 29.5px;
+      font-size: 12.5px;
+      color: #737373; }
+      .content .shop_order_info .shop_order_ads li span {
+        font-size: 12.5px; }
+      .content .shop_order_info .shop_order_ads li .big {
+        font-size: 16.25px; }
+.content .shop_service_nav {
+  background: #fff; }
+  .content .shop_service_nav > div {
+    text-align: center;
+    height: 37.5px;
+    line-height: 37.5px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative; }
+    .content .shop_service_nav > div span {
+      color: #737373; }
+    .content .shop_service_nav > div .triangle {
+      border: solid;
+      border-width: 8px 6px;
+      border-color: #737373 transparent transparent transparent;
+      position: absolute;
+      top: 13px;
+      right: 20px;
+      transition: transform .1s ease-in 0s;
+      -webkit-transition: -webkit-transform .1s ease-in 0s; }
+    .content .shop_service_nav > div ul {
+      position: absolute;
+      width: 100%;
+      background: #fff;
+      -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+      left: 0;
+      display: none; }
+      .content .shop_service_nav > div ul li {
+        border-top: 1px solid #ccc;
+        font-size: 15px;
+        color: #737373; }
+        .content .shop_service_nav > div ul li:first-child {
+          border-top: none; }
+  .content .shop_service_nav .shop_all_svice {
+    border-right: 1px solid #ccc; }
+.content .shop_service_nav1 .shop_all_svice {
+  border-right: 1px solid #f34747;
+  border-top: 1px solid #f34747;
+  border-bottom: 1px solid #f34747; }
+  .content .shop_service_nav1 .shop_all_svice .triangle {
+    border-color: #f34747 transparent transparent transparent;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+  .content .shop_service_nav1 .shop_all_svice ul {
+    display: block; }
+.content .shop_service_nav2 .shop_all_svice {
+  border-right: none; }
+.content .shop_service_nav2 .shop_all_genre {
+  border-left: 1px solid #f34747;
+  border-top: 1px solid #f34747;
+  border-bottom: 1px solid #f34747; }
+  .content .shop_service_nav2 .shop_all_genre .triangle {
+    border-color: #f34747 transparent transparent transparent;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg); }
+  .content .shop_service_nav2 .shop_all_genre ul {
+    display: block; }
+.content .shop_svice_list {
+  padding: 0 3%; }
+  .content .shop_svice_list li {
+    padding: 16.8px 0;
+    border-bottom: 1px solid #ccc; }
+    .content .shop_svice_list li .shop_svice_head {
+      width: 30%;
+      float: left; }
+      .content .shop_svice_list li .shop_svice_head img {
+        display: block;
+        width: 80%; }
+    .content .shop_svice_list li .shop_svice_info {
+      width: 35%;
+      float: left; }
+      .content .shop_svice_list li .shop_svice_info h2 {
+        font-size: 15px;
+        font-weight: normal;
+        color: #4d4d4d;
+        margin-bottom: 10px; }
+      .content .shop_svice_list li .shop_svice_info p {
+        font-size: 11.2px;
+        color: #737373;
+        margin-bottom: 5px; }
+    .content .shop_svice_list li .shop_svice_price {
+      width: 35%;
+      float: left;
+      text-align: right; }
+      .content .shop_svice_list li .shop_svice_price p.rate span {
+        color: #737373;
+        font-size: 11.25px; }
+      .content .shop_svice_list li .shop_svice_price p.rate .price {
+        font-size: 15px;
+        color: #f34747;
+        margin-left: 5px; }
+      .content .shop_svice_list li .shop_svice_price .operate {
+        margin-top: 18.75px;
+        color: #f289b6;
+        font-size: 13.75px; }
+        .content .shop_svice_list li .shop_svice_price .operate a {
+          color: #f289b6;
+          font-size: 13.75px; }
+.content .shop_svice_btn {
+  padding: 15px 0;
+  width: 100%;
+  position: fixed;
+  background: #f8f8f8;
+  bottom: 0; }
+  .content .shop_svice_btn a {
+    height: 37.5px;
+    line-height: 37.5px;
+    text-align: center;
+    color: #fff;
+    background: #f34747;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0 8.5%; }
+.content .shop_techn_list {
+  padding: 0 3%; }
+  .content .shop_techn_list li {
+    padding: 18.75px 0;
+    border-bottom: 1px solid #ccc;
+    position: relative; }
+    .content .shop_techn_list li > div p {
+      margin-bottom: 12px;
+      vertical-align: middle;
+      color: #737373; }
+      .content .shop_techn_list li > div p .name {
+        font-size: 15px;
+        color: #737373;
+        margin-right: 5px;
+        vertical-align: middle; }
+      .content .shop_techn_list li > div p .text {
+        color: #aeaeae;
+        font-size: 11.25px;
+        margin-left: 10px;
+        vertical-align: middle;
+        font-size: 12.5px; }
+    .content .shop_techn_list li .detail {
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      font-size: 13.75px;
+      margin-top: -8px;
+      color: #737373; }
 
 footer {
   text-align: center;
