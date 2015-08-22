@@ -1,16 +1,16 @@
 /*
 Error: Invalid CSS after "}": expected "}", was ""
-        on line 111 of sass/shop.scss
+        on line 305 of sass/shop.scss
 
-106: 	}
-107: 	.shop_menu_list{
-108: 		& >div{
-109: 		}
-110: 	}
-111: }
+300: 	}
+301: 	.text{
+302: 		font-size:12.5px;
+303: 		color:$font_light;
+304: 	}
+305: }
 
 Backtrace:
-sass/shop.scss:111
+sass/shop.scss:305
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1162:in `expected'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1098:in `expected'
 C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1093:in `tok!'
@@ -39,4 +39,4 @@ C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 111 of sass/shop.scss\A \A 106: 	}\A 107: 	.shop_menu_list{\A 108: 		& >div{\A 109: 		}\A 110: 	}\A 111: }"; }
+  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 305 of sass/shop.scss\A \A 300: 	}\A 301: 	.text{\A 302: 		font-size:12.5px;\A 303: 		color:$font_light;\A 304: 	}\A 305: }"; }
