@@ -203,3 +203,20 @@ a {
         outline: none;
     }
 }
+.cf {
+    &:after, &:before {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}

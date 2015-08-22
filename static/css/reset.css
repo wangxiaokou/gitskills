@@ -159,4 +159,16 @@ a {
   a:active {
     outline: none; }
 
+.cf:after, .cf:before {
+  content: '';
+  display: table; }
+.cf:after {
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
 /*# sourceMappingURL=reset.css.map */
