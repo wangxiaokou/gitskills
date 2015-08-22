@@ -10,9 +10,14 @@ $font_dark:#4d4d4d;
 	color:$main_color;
 	font-size:18.75px;
 	position: relative;
-	.shop_header_r{
+	.to_shop{
+		font-size: 15px;
 		position: absolute;
-		
+		right: 3%;
+		.icon{
+			font-size: 12.5px;
+			color:$main_color;
+		}
 	}
 }
 .has_footer{
@@ -60,7 +65,44 @@ $font_dark:#4d4d4d;
 			text-align:center;
 			font-size:30px;
 			color:$font_dark;
+
 		}
+	}
+	.nav_state{
+		.nav_content{
+			font-size: 15px;
+			color: $font_light;
+			height: 37.5px;
+			line-height: 37.5px;
+			text-align: center;
+			border: 1px solid $font_light;
+			border-left: none;
+		}
+		.nav_no{
+			border-right: none;
+		}
+	}
+	.search{
+		height: 43.75px;
+		line-height: 43.75px;
+		font-size: 12.5px;
+	}
+	.bg_ul_content{
+		background: $bg_color;
+		border-top: 1px solid $font_light;
+		.bg_li{
+			padding: 18.75px 3%;
+			border-bottom: 1px solid $font_light;
+		}
+		.bg_s_l{
+			float: left;
+		}
+		.bg_s_r{
+			float: right;
+		}
+		.f_24{
+			font-size: 15px;
+
 	}
 	.shop_menu_list{
 		& >div{
