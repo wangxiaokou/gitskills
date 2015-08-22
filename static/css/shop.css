@@ -1,12 +1,27 @@
+.pink {
+  color: #eb608f !important; }
+
+.red {
+  color: #f34747 !important; }
+
+.gray_bg {
+  background: #f8f8f8; }
+
 .shop_header {
   height: 52px;
   line-height: 52px;
   text-align: center;
   color: #eb608f;
   font-size: 18.75px;
-  position: relative; }
+  position: relative;
+  background: #fff; }
   .shop_header .shop_header_r {
     position: absolute; }
+  .shop_header .shop_back {
+    font-size: 15.6px;
+    color: #eb608f;
+    position: absolute;
+    left: 3%; }
 
 .has_footer {
   padding-bottom: 56.25px; }
@@ -27,6 +42,7 @@
     color: #737373;
     padding-top: 13px; }
 .content .shop_show_number {
+  background: #fff;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc; }
   .content .shop_show_number .shop_list {
@@ -43,5 +59,142 @@
     text-align: center;
     font-size: 30px;
     color: #4d4d4d; }
+.content .shop_menu_list {
+  text-align: center;
+  padding-top: 18.75px;
+  background: #f8f8f8; }
+  .content .shop_menu_list .icon {
+    height: 56.25px;
+    line-height: 56.25px;
+    width: 56.25px;
+    background: #f289b6;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 25px;
+    color: #fff; }
+  .content .shop_menu_list .text {
+    font-size: 11.25px;
+    margin-top: 5px;
+    color: #737373; }
+.content .shop_income_number {
+  height: 136.25px;
+  line-height: 136.25px;
+  background: #f8f8f8;
+  font-size: 37.5px;
+  text-align: center;
+  color: #eb608f; }
+.content .shop_income_menu {
+  background: #fff; }
+  .content .shop_income_menu .shop_income_nbr {
+    margin: 0 3%; }
+    .content .shop_income_menu .shop_income_nbr .shop_list {
+      border-bottom: 1px solid #ccc; }
+    .content .shop_income_menu .shop_income_nbr > div {
+      border-bottom: 1px solid #ccc; }
+      .content .shop_income_menu .shop_income_nbr > div:first-child {
+        padding-left: 0; }
+      .content .shop_income_menu .shop_income_nbr > div > div {
+        padding-top: 17px;
+        height: 97px; }
+    .content .shop_income_menu .shop_income_nbr .shop_list_info {
+      border-right: 1px solid #ccc; }
+    .content .shop_income_menu .shop_income_nbr .title {
+      font-size: 15px;
+      color: #737373;
+      padding-top: 31.25px;
+      display: inline-block; }
+    .content .shop_income_menu .shop_income_nbr .number {
+      text-align: right;
+      font-size: 30px;
+      color: #737373; }
+  .content .shop_income_menu .shop_income_list .shop_list_info {
+    border-right: 1px solid #ccc; }
+  .content .shop_income_menu .shop_income_list > div {
+    padding-bottom: 26.85px;
+    text-align: right; }
+  .content .shop_income_menu .shop_income_list .title {
+    padding-top: 31.25px;
+    text-align: left; }
+    .content .shop_income_menu .shop_income_list .title .icon {
+      font-size: 28.75px;
+      color: #eb608f;
+      vertical-align: middle; }
+    .content .shop_income_menu .shop_income_list .title .text {
+      font-size: 18.75px;
+      vertical-align: middle; }
+      .content .shop_income_menu .shop_income_list .title .text .circle {
+        height: 10px;
+        width: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #f34747;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%; }
+  .content .shop_income_menu .shop_income_list .number {
+    text-align: right;
+    font-size: 30px;
+    color: #737373; }
+  .content .shop_income_menu a {
+    margin-top: 18px;
+    display: inline-block;
+    margin-right: 20px;
+    color: #737373;
+    font-size: 12.5px; }
+.content .shop_order_info {
+  padding: 0 3%;
+  background: #f0f0f0;
+  margin-bottom: 9.3px; }
+  .content .shop_order_info .shop_order_state {
+    line-height: 46.25px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #737373; }
+    .content .shop_order_info .shop_order_state span {
+      float: right;
+      font-size: 12.5px;
+      color: #d1d1d1; }
+  .content .shop_order_info .shop_order_user {
+    padding: 3px 0; }
+    .content .shop_order_info .shop_order_user li {
+      border-top: 1px solid #fff;
+      line-height: 29.5px;
+      font-size: 15px;
+      color: #737373; }
+      .content .shop_order_info .shop_order_user li:first-child {
+        border-top: none; }
+      .content .shop_order_info .shop_order_user li span {
+        font-size: 12.5px;
+        float: right; }
+  .content .shop_order_info .shop_order_msg {
+    padding: 5px 0 18.75px; }
+    .content .shop_order_info .shop_order_msg li {
+      border-bottom: 1px solid #fff;
+      line-height: 29.5px;
+      font-size: 12.5px;
+      color: #737373; }
+      .content .shop_order_info .shop_order_msg li span {
+        font-size: 12.5px;
+        float: right; }
+      .content .shop_order_info .shop_order_msg li .big {
+        font-size: 16.25px; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 56.25px;
+  background: #eee; }
+  footer .current .icon, footer .current .text {
+    color: #eb608f; }
+  footer .icon {
+    font-size: 23px;
+    color: #737373; }
+  footer .text {
+    font-size: 12.5px;
+    color: #737373; }
 
 /*# sourceMappingURL=shop.css.map */
