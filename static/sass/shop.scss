@@ -8,6 +8,8 @@ $gray_e:#eee;
 $pink_bg:#f289b6;
 $order_bg:#f0f0f0;
 $red_color:#f34747;
+$gray_color:#aeaeae;
+p{margin:0;}
 .pink{
 	color:$main_color!important;
 }
@@ -17,6 +19,16 @@ $red_color:#f34747;
 .gray_bg{
 	background:$bg_color;
 }
+.ready_star{
+	font-size:12.5px;
+	margin-right:3px;
+	color:#fbb84f;
+}
+.star{
+	font-size:12.5px;
+	margin-right:3px;
+	color:$font_light;
+}
 .shop_header{
 	height:52px;
 	line-height:52px;
@@ -24,6 +36,7 @@ $red_color:#f34747;
 	color:$main_color;
 	font-size:18.75px;
 	position: relative;
+	background:$bg_white;
 	.to_shop{
 		font-size: 15px;
 		background:$bg_white;
@@ -124,7 +137,7 @@ $red_color:#f34747;
 		}
 		.f_24{
 			font-size: 15px;
-
+		}
 	}
 	.shop_menu_list{
 		text-align:center;
@@ -278,6 +291,214 @@ $red_color:#f34747;
 				.big{
 					font-size: 16.25px;
 				}
+			}
+		}
+		.shop_order_ads{
+			padding:15.5px 0 48.75px;
+			h2{
+				font-size:15px;
+				color:$font_light;
+				font-weight:normal;
+				padding-bottom:5px;
+			}
+			li{
+				border-bottom:1px solid $bg_white;
+				line-height:29.5px;
+				font-size:12.5px;
+				color:$font_light;
+				span{
+					font-size:12.5px;
+				}
+				.big{
+					font-size: 16.25px;
+				}
+			}
+		}
+	}
+	.shop_service_nav{
+		background:$bg_white;
+		& >div{
+			text-align:center;
+			height:37.5px;
+			line-height: 37.5px;		
+			border-top:1px solid $border_color;
+			border-bottom:1px solid $border_color;
+			position:relative;
+			span{
+				color:$font_light;
+			}
+			.triangle{
+				border:solid;
+				border-width:8px 6px;
+				border-color:$font_light transparent transparent transparent;
+				position:absolute;
+				top:13px;
+				right:20px;
+				transition: transform .1s ease-in 0s;
+    			-webkit-transition: -webkit-transform .1s ease-in 0s;
+			}
+			ul{
+				position:absolute;
+				width:100%;
+				background:$bg_white;
+				-webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+				left:0;
+				display: none;
+				li{
+					&:first-child{
+						border-top:none;
+					}
+					border-top:1px solid $border_color;
+					font-size:15px;
+					color:$font_light;
+				}
+			}
+		}
+		.shop_all_svice{
+			border-right:1px solid $border_color;
+		}
+	}
+	.shop_service_nav1{
+		.shop_all_svice{
+			border-right:1px solid $red_color;
+			border-top:1px solid $red_color;
+			border-bottom:1px solid $red_color;
+			.triangle{
+				border-color:$red_color transparent transparent transparent;
+				transform:rotate(180deg);
+				-webkit-transform:rotate(180deg);
+			}
+			ul{
+				display: block;
+			}
+		}
+	}
+	.shop_service_nav2{
+		.shop_all_svice{
+			border-right:none;
+		}
+		.shop_all_genre{
+			border-left:1px solid $red_color;
+			border-top:1px solid $red_color;
+			border-bottom:1px solid $red_color;
+			.triangle{
+				border-color:$red_color transparent transparent transparent;
+				transform:rotate(180deg);
+				-webkit-transform:rotate(180deg);
+			}
+			ul{
+				display: block;
+			}
+		}
+	}
+	.shop_svice_list{
+		padding:0 3%;
+		li{
+			padding:16.8px 0;
+			border-bottom:1px solid $border_color;
+			.shop_svice_head{
+				width:30%;
+				float:left;
+				img{
+					display: block;
+					width:80%;
+				}
+			}
+			.shop_svice_info{
+				width:35%;
+				float:left;
+				h2{
+					font-size:15px;
+					font-weight: normal;
+					color:$font_dark;
+					margin-bottom:10px;
+				}
+				p{
+					font-size:11.2px;
+					color:$font_light;
+					margin-bottom:5px;
+				}
+			}
+			.shop_svice_price{
+				width:35%;
+				float:left;
+				text-align:right;
+				p.rate{
+					span{
+						color:$font_light;
+						font-size:11.25px;
+					}
+					.price{
+						font-size:15px;
+						color:$red_color;
+						margin-left:5px;
+					}
+				}
+				.operate{
+					margin-top:18.75px;
+					color:$pink_bg;
+					font-size:13.75px;
+					a{
+						color:$pink_bg;
+						font-size:13.75px;
+					}
+				}
+			}
+		}
+	}
+	.shop_svice_btn{
+		padding:15px 0;
+		width:100%;
+		position:fixed;
+		background:$bg_color;
+		bottom:0;
+		a{
+			height:37.5px;
+			line-height:37.5px;
+			text-align:center;
+			color:$bg_white;
+			background:$red_color;
+			display: block;
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			border-radius:5px;
+			font-size:15px;
+			margin:0 8.5%;
+		}
+	}
+	.shop_techn_list{
+		padding:0 3%;
+		li{
+			padding:18.75px 0;
+			border-bottom:1px solid $border_color;
+			position:relative;
+			& >div{
+				p{
+					margin-bottom:12px;
+					vertical-align: middle;
+					color:$font_light;
+					.name{
+						font-size:15px;
+						color:$font_light;
+						margin-right:5px;
+						vertical-align: middle;
+					}
+					.text{
+						color:$gray_color;
+						font-size:11.25px;
+						margin-left:10px;
+						vertical-align: middle;
+						font-size:12.5px;
+					}
+				}
+			}
+			.detail{
+				position:absolute;
+				right:5%;
+				top:50%;
+				font-size:13.75px;
+				margin-top:-8px;
+				color:$font_light;
 			}
 		}
 	}
