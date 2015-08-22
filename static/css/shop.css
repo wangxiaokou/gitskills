@@ -5,6 +5,9 @@
   color: #eb608f;
   font-size: 18.75px; }
 
+.has_footer {
+  padding-bottom: 56.25px; }
+
 .content .shop_show {
   background: #f8f8f8;
   text-align: center;
@@ -16,5 +19,27 @@
     border-radius: 100%;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%; }
+  .content .shop_show p {
+    font-size: 15px;
+    color: #737373;
+    padding-top: 13px; }
+.content .shop_show_number {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .content .shop_show_number .shop_list {
+    border-bottom: 1px solid #ccc; }
+  .content .shop_show_number > div > div {
+    padding-top: 17px;
+    height: 97px; }
+  .content .shop_show_number .shop_list_info {
+    border-right: 1px solid #ccc;
+    padding-left: 30px; }
+  .content .shop_show_number .title {
+    font-size: 13.75px;
+    color: #737373; }
+  .content .shop_show_number .number {
+    text-align: center;
+    font-size: 30px;
+    color: #4d4d4d; }
 
 /*# sourceMappingURL=shop.css.map */
