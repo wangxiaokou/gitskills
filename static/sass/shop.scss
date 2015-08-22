@@ -1,14 +1,19 @@
-$main_color:#eb608f;//主色粉色
-$bg_color:#f8f8f8;//背景色
-$font_light:#737373;//浅色字
-$border_color:#ccc;//边框色
-$font_dark:#4d4d4d;//深色字
+$main_color:#eb608f;
+$bg_color:#f8f8f8;
+$font_light:#737373;
+$border_color:#ccc;
+$font_dark:#4d4d4d;
 .shop_header{
 	height:52px;
 	line-height:52px;
 	text-align:center;
 	color:$main_color;
 	font-size:18.75px;
+	position: relative;
+	.shop_header_r{
+		position: absolute;
+		
+	}
 }
 .has_footer{
 	padding-bottom:56.25px;

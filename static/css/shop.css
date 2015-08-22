@@ -3,7 +3,10 @@
   line-height: 52px;
   text-align: center;
   color: #eb608f;
-  font-size: 18.75px; }
+  font-size: 18.75px;
+  position: relative; }
+  .shop_header .shop_header_r {
+    position: absolute; }
 
 .has_footer {
   padding-bottom: 56.25px; }
