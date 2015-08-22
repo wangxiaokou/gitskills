@@ -11,7 +11,8 @@ body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abb
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0; }
+  outline: 0;
+  font-family: Helvetica Neue,tahoma,arial,Microsoft YaHei,"Hiragino Sans GB",\5b8b\4f53; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
@@ -29,7 +30,7 @@ template {
   display: none; }
 
 body, button, input, optgroup, select, textarea {
-  font: 12px/1.5 Helvetica Neue,tahoma,arial,"Hiragino Sans GB",Microsoft YaHei,\5b8b\4f53; }
+  font: 12px/1.5 Helvetica Neue,tahoma,arial,Microsoft YaHei,"Hiragino Sans GB",\5b8b\4f53; }
 
 input, select, textarea {
   outline: none;

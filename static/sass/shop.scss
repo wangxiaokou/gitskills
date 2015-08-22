@@ -8,6 +8,7 @@ $gray_e:#eee;
 $pink_bg:#f289b6;
 $order_bg:#f0f0f0;
 $red_color:#f34747;
+$bg_ph:#f9f8f9;
 .pink{
 	color:$main_color!important;
 }
@@ -45,6 +46,21 @@ $red_color:#f34747;
 	padding-bottom:56.25px;
 }
 .content{
+	.bg_ph{
+		background: $bg_ph;
+		padding: 31.25px 0;
+		text-align: center;
+		.print{
+			display: inline-block;
+			height: 75px;
+			width: 75px;
+			font-size: 35.625px;
+			text-align: center;
+			line-height: 75px;
+			border-radius: 100%;
+			background: $main_color;
+		}
+	}
 	.shop_show{
 		background:$bg_color;
 		text-align:center;
@@ -90,17 +106,65 @@ $red_color:#f34747;
 
 		}
 	}
-	.nav_state{
+	.nav_state_all{
 		.nav_content{
 			font-size: 15px;
 			color: $font_light;
 			height: 37.5px;
 			line-height: 37.5px;
 			text-align: center;
+		}
+		.nav_all{
+			border: 1px solid $red_color;
+			border-left: none;
+		}
+		.nav_finish{
 			border: 1px solid $font_light;
 			border-left: none;
 		}
-		.nav_no{
+		.nav_no_f{
+			border-bottom: 1px solid $font_light;
+			border-top: 1px solid $font_light;
+		}
+	}
+	.nav_state_finish{
+		.nav_content{
+			font-size: 15px;
+			color: $font_light;
+			height: 37.5px;
+			line-height: 37.5px;
+			text-align: center;
+		}
+		.nav_all{
+			border-bottom: 1px solid $font_light;
+			border-top: 1px solid $font_light;
+		}
+		.nav_finish{
+			border: 1px solid $red_color;
+		}
+		.nav_no_f{
+			border-bottom: 1px solid $font_light;
+			border-top: 1px solid $font_light;
+		}
+	}
+	.nav_state_no_f{
+		.nav_content{
+			font-size: 15px;
+			color: $font_light;
+			height: 37.5px;
+			line-height: 37.5px;
+			text-align: center;
+		}
+		.nav_all{
+			border: 1px solid $font_light;
+			border-left: none;
+		}
+		.nav_finish{
+			border-bottom: 1px solid $font_light;
+			border-top: 1px solid $font_light;
+		}
+		.nav_no_f{
+			border: 1px solid $red_color;
 			border-right: none;
 		}
 	}
@@ -113,18 +177,37 @@ $red_color:#f34747;
 		background: $bg_color;
 		border-top: 1px solid $font_light;
 		.bg_li{
-			padding: 18.75px 3%;
+			padding: 18.75px 2%;
 			border-bottom: 1px solid $font_light;
-		}
-		.bg_s_l{
+			margin: 0 3%;
+			position: relative;
+			.p_r{
+				font-size: 14.375px;
+				position: absolute;
+				top: 50%;
+				right: 3%;
+				margin-top: -6px;
+			}
+			.bg_s_l{
 			float: left;
+			}
+			.bg_s_r{
+				float: right;
+			}
+			.f_24{
+				font-size: 15px;
+			}
+			.f_20{
+				font-size: 12.5px;
+			}
+			.f_18{
+				font-size: 11.25px;
+			}
+			.p_l{
+				padding-right: 6%;
+			}
 		}
-		.bg_s_r{
-			float: right;
-		}
-		.f_24{
-			font-size: 15px;
-
+		
 	}
 	.shop_menu_list{
 		text-align:center;

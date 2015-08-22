@@ -1,42 +1,292 @@
-/*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 305 of sass/shop.scss
+.pink {
+  color: #eb608f !important; }
 
-300: 	}
-301: 	.text{
-302: 		font-size:12.5px;
-303: 		color:$font_light;
-304: 	}
-305: }
+.red {
+  color: #f34747 !important; }
 
-Backtrace:
-sass/shop.scss:305
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1162:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1098:in `expected'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:1093:in `tok!'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:640:in `block'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:632:in `ruleset'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:657:in `block_child'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:650:in `block_contents'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:117:in `stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/scss/parser.rb:42:in `parse'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/engine.rb:403:in `_to_tree'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/engine.rb:295:in `render_with_sourcemap'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.17/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 305 of sass/shop.scss\A \A 300: 	}\A 301: 	.text{\A 302: 		font-size:12.5px;\A 303: 		color:$font_light;\A 304: 	}\A 305: }"; }
+.gray_bg {
+  background: #f8f8f8; }
+
+.shop_header {
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  color: #eb608f;
+  font-size: 18.75px;
+  position: relative; }
+  .shop_header .to_shop {
+    font-size: 15px;
+    background: #fff;
+    position: absolute;
+    right: 3%; }
+    .shop_header .to_shop .icon {
+      font-size: 12.5px;
+      color: #eb608f; }
+  .shop_header .shop_back {
+    font-size: 15.6px;
+    color: #eb608f;
+    position: absolute;
+    left: 3%; }
+
+.has_footer {
+  padding-bottom: 56.25px; }
+
+.content .bg_ph {
+  background: #f9f8f9;
+  padding: 31.25px 0;
+  text-align: center; }
+  .content .bg_ph .print {
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    font-size: 35.625px;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 100%;
+    background: #eb608f; }
+.content .shop_show {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 30px 0; }
+  .content .shop_show img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%; }
+  .content .shop_show p {
+    font-size: 15px;
+    color: #737373;
+    padding-top: 13px; }
+.content .shop_show_number {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .content .shop_show_number .shop_list {
+    border-bottom: 1px solid #ccc; }
+  .content .shop_show_number > div > div {
+    padding-top: 17px;
+    height: 97px; }
+  .content .shop_show_number .shop_list_info {
+    border-right: 1px solid #ccc; }
+  .content .shop_show_number .title {
+    font-size: 13.75px;
+    color: #737373; }
+  .content .shop_show_number .number {
+    text-align: center;
+    font-size: 30px;
+    color: #4d4d4d; }
+.content .nav_state_all .nav_content {
+  font-size: 15px;
+  color: #737373;
+  height: 37.5px;
+  line-height: 37.5px;
+  text-align: center; }
+.content .nav_state_all .nav_all {
+  border: 1px solid #f34747;
+  border-left: none; }
+.content .nav_state_all .nav_finish {
+  border: 1px solid #737373;
+  border-left: none; }
+.content .nav_state_all .nav_no_f {
+  border-bottom: 1px solid #737373;
+  border-top: 1px solid #737373; }
+.content .nav_state_finish .nav_content {
+  font-size: 15px;
+  color: #737373;
+  height: 37.5px;
+  line-height: 37.5px;
+  text-align: center; }
+.content .nav_state_finish .nav_all {
+  border-bottom: 1px solid #737373;
+  border-top: 1px solid #737373; }
+.content .nav_state_finish .nav_finish {
+  border: 1px solid #f34747; }
+.content .nav_state_finish .nav_no_f {
+  border-bottom: 1px solid #737373;
+  border-top: 1px solid #737373; }
+.content .nav_state_no_f .nav_content {
+  font-size: 15px;
+  color: #737373;
+  height: 37.5px;
+  line-height: 37.5px;
+  text-align: center; }
+.content .nav_state_no_f .nav_all {
+  border: 1px solid #737373;
+  border-left: none; }
+.content .nav_state_no_f .nav_finish {
+  border-bottom: 1px solid #737373;
+  border-top: 1px solid #737373; }
+.content .nav_state_no_f .nav_no_f {
+  border: 1px solid #f34747;
+  border-right: none; }
+.content .search {
+  height: 43.75px;
+  line-height: 43.75px;
+  font-size: 12.5px; }
+.content .bg_ul_content {
+  background: #f8f8f8;
+  border-top: 1px solid #737373; }
+  .content .bg_ul_content .bg_li {
+    padding: 18.75px 2%;
+    border-bottom: 1px solid #737373;
+    margin: 0 3%;
+    position: relative; }
+    .content .bg_ul_content .bg_li .p_r {
+      font-size: 14.375px;
+      position: absolute;
+      top: 50%;
+      right: 3%;
+      margin-top: -6px; }
+    .content .bg_ul_content .bg_li .bg_s_l {
+      float: left; }
+    .content .bg_ul_content .bg_li .bg_s_r {
+      float: right; }
+    .content .bg_ul_content .bg_li .f_24 {
+      font-size: 15px; }
+    .content .bg_ul_content .bg_li .f_20 {
+      font-size: 12.5px; }
+    .content .bg_ul_content .bg_li .f_18 {
+      font-size: 11.25px; }
+    .content .bg_ul_content .bg_li .p_l {
+      padding-right: 6%; }
+.content .shop_menu_list {
+  text-align: center;
+  padding-top: 18.75px;
+  background: #f8f8f8; }
+  .content .shop_menu_list .icon {
+    height: 56.25px;
+    line-height: 56.25px;
+    width: 56.25px;
+    background: #f289b6;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 25px;
+    color: #fff; }
+  .content .shop_menu_list .text {
+    font-size: 11.25px;
+    margin-top: 5px;
+    color: #737373; }
+.content .shop_income_number {
+  height: 136.25px;
+  line-height: 136.25px;
+  background: #f8f8f8;
+  font-size: 37.5px;
+  text-align: center;
+  color: #eb608f; }
+.content .shop_income_menu {
+  background: #fff; }
+  .content .shop_income_menu .shop_income_nbr {
+    margin: 0 3%; }
+    .content .shop_income_menu .shop_income_nbr .shop_list {
+      border-bottom: 1px solid #ccc; }
+    .content .shop_income_menu .shop_income_nbr > div {
+      border-bottom: 1px solid #ccc; }
+      .content .shop_income_menu .shop_income_nbr > div:first-child {
+        padding-left: 0; }
+      .content .shop_income_menu .shop_income_nbr > div > div {
+        padding-top: 17px;
+        height: 97px; }
+    .content .shop_income_menu .shop_income_nbr .shop_list_info {
+      border-right: 1px solid #ccc; }
+    .content .shop_income_menu .shop_income_nbr .title {
+      font-size: 15px;
+      color: #737373;
+      padding-top: 31.25px;
+      display: inline-block; }
+    .content .shop_income_menu .shop_income_nbr .number {
+      text-align: right;
+      font-size: 30px;
+      color: #737373; }
+  .content .shop_income_menu .shop_income_list .shop_list_info {
+    border-right: 1px solid #ccc; }
+  .content .shop_income_menu .shop_income_list > div {
+    padding-bottom: 26.85px;
+    text-align: right; }
+  .content .shop_income_menu .shop_income_list .title {
+    padding-top: 31.25px;
+    text-align: left; }
+    .content .shop_income_menu .shop_income_list .title .icon {
+      font-size: 28.75px;
+      color: #eb608f;
+      vertical-align: middle; }
+    .content .shop_income_menu .shop_income_list .title .text {
+      font-size: 18.75px;
+      vertical-align: middle; }
+      .content .shop_income_menu .shop_income_list .title .text .circle {
+        height: 10px;
+        width: 10px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #f34747;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%; }
+  .content .shop_income_menu .shop_income_list .number {
+    text-align: right;
+    font-size: 30px;
+    color: #737373; }
+  .content .shop_income_menu a {
+    margin-top: 18px;
+    display: inline-block;
+    margin-right: 20px;
+    color: #737373;
+    font-size: 12.5px; }
+.content .shop_order_info {
+  padding: 0 3%;
+  background: #f0f0f0;
+  margin-bottom: 9.3px; }
+  .content .shop_order_info .shop_order_state {
+    line-height: 46.25px;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #737373; }
+    .content .shop_order_info .shop_order_state span {
+      float: right;
+      font-size: 12.5px;
+      color: #d1d1d1; }
+  .content .shop_order_info .shop_order_user {
+    padding: 3px 0; }
+    .content .shop_order_info .shop_order_user li {
+      border-top: 1px solid #fff;
+      line-height: 29.5px;
+      font-size: 15px;
+      color: #737373; }
+      .content .shop_order_info .shop_order_user li:first-child {
+        border-top: none; }
+      .content .shop_order_info .shop_order_user li span {
+        font-size: 12.5px;
+        float: right; }
+  .content .shop_order_info .shop_order_msg {
+    padding: 5px 0 18.75px; }
+    .content .shop_order_info .shop_order_msg li {
+      border-bottom: 1px solid #fff;
+      line-height: 29.5px;
+      font-size: 12.5px;
+      color: #737373; }
+      .content .shop_order_info .shop_order_msg li span {
+        font-size: 12.5px;
+        float: right; }
+      .content .shop_order_info .shop_order_msg li .big {
+        font-size: 16.25px; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 56.25px;
+  background: #eee; }
+  footer .current .icon, footer .current .text {
+    color: #eb608f; }
+  footer .icon {
+    font-size: 23px;
+    color: #737373; }
+  footer .text {
+    font-size: 12.5px;
+    color: #737373; }
+
+/*# sourceMappingURL=shop.css.map */
