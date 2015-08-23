@@ -350,8 +350,8 @@ p {
   border-bottom: 1px solid #f34747; }
   .content .shop_service_nav1 .shop_all_svice .triangle {
     border-color: #f34747 transparent transparent transparent;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg); }
+    transform: rotate(180deg) translate(0, 6px);
+    -webkit-transform: rotate(180deg) translate(0, 6px); }
   .content .shop_service_nav1 .shop_all_svice ul {
     display: block; }
 .content .shop_service_nav2 .shop_all_svice {
@@ -362,8 +362,8 @@ p {
   border-bottom: 1px solid #f34747; }
   .content .shop_service_nav2 .shop_all_genre .triangle {
     border-color: #f34747 transparent transparent transparent;
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg); }
+    transform: rotate(180deg) translate(0, 6px);
+    -webkit-transform: rotate(180deg) translate(0, 6px); }
   .content .shop_service_nav2 .shop_all_genre ul {
     display: block; }
 .content .shop_svice_list {
@@ -453,6 +453,32 @@ p {
       font-size: 13.75px;
       margin-top: -8px;
       color: #737373; }
+    .content .shop_techn_list li .shop_detail_info p {
+      color: #737373;
+      margin: 0;
+      font-size: 13.75px; }
+    .content .shop_techn_list li .shop_detail_info span {
+      font-size: 11.25px;
+      color: #aeaeae; }
+    .content .shop_techn_list li .shop_detail_price {
+      font-size: 16.25px;
+      text-align: right;
+      padding-right: 40px;
+      padding-top: 10px;
+      color: #737373; }
+.content .shop_detail_nav {
+  background: #fff; }
+  .content .shop_detail_nav > div {
+    text-align: center;
+    height: 37.5px;
+    line-height: 37.5px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    position: relative; }
+    .content .shop_detail_nav > div span {
+      color: #aeaeae; }
+  .content .shop_detail_nav .shop_detail_shop {
+    border-right: 1px solid #ccc; }
 
 footer {
   text-align: center;
