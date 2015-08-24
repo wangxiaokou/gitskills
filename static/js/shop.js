@@ -1,29 +1,35 @@
 $(function(){
-	$('.shop_all_svice').bind('click',function(e){
+	$('.shop_all_svice').add('.shop_all_spa').bind('click',function(e){
 		e.stopPropagation();
 		if($(this).parent().hasClass('shop_service_nav1')){
 			$(this).parent().removeClass('shop_service_nav1');
 		}else{
-			$(this).parent().addClass('shop_service_nav1');
-			$(this).parent().removeClass('shop_service_nav2');
+			$(this).parent().addClass('shop_service_nav1').removeClass('shop_service_nav2').removeClass('shop_service_nav3');
 		}
 	});
-	$('.shop_all_genre').bind('click',function(e){
+	$('.shop_all_genre').add('.shop_all_trade').bind('click',function(e){
 		e.stopPropagation();
 		if($(this).parent().hasClass('shop_service_nav2')){
 			$(this).parent().removeClass('shop_service_nav2');
 		}else{
-			$(this).parent().addClass('shop_service_nav2');
-			$(this).parent().removeClass('shop_service_nav1');
+			$(this).parent().addClass('shop_service_nav2').removeClass('shop_service_nav1').removeClass('shop_service_nav3');
+		}
+	});
+	$('.shop_all_sort').bind('click',function(e){
+		e.stopPropagation();
+		if($(this).parent().hasClass('shop_service_nav3')){
+			$(this).parent().removeClass('shop_service_nav3');
+		}else{
+			$(this).parent().addClass('shop_service_nav3').removeClass('shop_service_nav1').removeClass('shop_service_nav2');
 		}
 	});
 	$('.shop_service_nav').find('ul').bind('click',function(e){
 		e.stopPropagation();
 	});
-	$('.shop_service_nav').find('li').bind('click',function(e){
-		$('.shop_service_nav').removeClass('shop_service_nav1').removeClass('shop_service_nav2');
+	$('.shop_service_nav').find('li').add('.shop_service_nav .list a').bind('click',function(e){
+		$('.shop_service_nav').removeClass('shop_service_nav1').removeClass('shop_service_nav2').removeClass('shop_service_nav3');
 	});
 	$('body').bind('click',function(){
-		$('.shop_service_nav').removeClass('shop_service_nav1').removeClass('shop_service_nav2');
+		$('.shop_service_nav,.shop_spa_nav').removeClass('shop_service_nav1').removeClass('shop_service_nav2').removeClass('shop_service_nav3');
 	});
 })

@@ -7,6 +7,12 @@ html {
   vertical-align: baseline;
   background: transparent; }
 
+html {
+  font-size: 100%; }
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 70%; } }
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input {
   margin: 0;
   padding: 0;
@@ -30,11 +36,10 @@ template {
   display: none; }
 
 body, button, input, optgroup, select, textarea {
-  font: 12px/1.5 Helvetica Neue,tahoma,arial,Microsoft YaHei,"Hiragino Sans GB",\5b8b\4f53; }
+  font-family: Helvetica Neue,tahoma,arial,Microsoft YaHei,"Hiragino Sans GB",\5b8b\4f53; }
 
 input, select, textarea {
   outline: none;
-  font-size: 12px;
   padding: .5em; }
 
 table {
@@ -70,15 +75,13 @@ caption, th {
   text-align: left; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 100;
-  font-size: 12px; }
+  font-weight: 100; }
 
 q:before, q:after {
   content: ''; }
 
 sub,
 sup {
-  font-size: 12px;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
@@ -147,8 +150,7 @@ pre {
   overflow: auto; }
 
 code, kbd, pre, samp {
-  font-family: monospace, monospace;
-  font-size: 12px; }
+  font-family: monospace, monospace; }
 
 a {
   outline: none;
@@ -174,5 +176,65 @@ a {
 
 .vm {
   vertical-align: middle; }
+
+.pink {
+  color: #eb608f !important; }
+
+.red {
+  color: #f34747 !important; }
+
+.gray_bg {
+  background: #f8f8f8; }
+
+.ready_star {
+  font-size: 1.25rem;
+  margin-right: 3px;
+  color: #fbb84f; }
+
+.star {
+  font-size: 1.25rem;
+  margin-right: 3px;
+  color: #737373; }
+
+.shop_header {
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  color: #eb608f;
+  font-size: 1.875rem;
+  position: relative;
+  background: #fff; }
+  .shop_header .to_shop {
+    font-size: 15px;
+    background: #fff;
+    position: absolute;
+    right: 3%; }
+    .shop_header .to_shop .icon {
+      font-size: 1.25rem;
+      color: #eb608f; }
+  .shop_header .shop_back {
+    font-size: 1.56rem;
+    color: #eb608f;
+    position: absolute;
+    left: 3%; }
+
+.has_footer {
+  padding-bottom: 56.25px; }
+
+footer {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 56.25px;
+  background: #eee; }
+  footer .current .icon, footer .current .text {
+    color: #eb608f; }
+  footer .icon {
+    font-size: 23px;
+    color: #737373; }
+  footer .text {
+    font-size: 1.25rem;
+    color: #737373; }
 
 /*# sourceMappingURL=reset.css.map */

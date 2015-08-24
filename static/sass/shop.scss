@@ -1,63 +1,5 @@
-$main_color:#eb608f;
-$bg_color:#f8f8f8;
-$font_light:#737373;
-$border_color:#ccc;
-$font_dark:#4d4d4d;
-$bg_white:#fff;
-$gray_e:#eee;
-$pink_bg:#f289b6;
-$order_bg:#f0f0f0;
-$red_color:#f34747;
-$bg_ph:#f9f8f9;
-$gray_color:#aeaeae;
+@import "theme";
 p{margin:0;}
-.pink{
-	color:$main_color!important;
-}
-.red{
-	color:$red_color!important;
-}
-.gray_bg{
-	background:$bg_color;
-}
-.ready_star{
-	font-size:12.5px;
-	margin-right:3px;
-	color:#fbb84f;
-}
-.star{
-	font-size:12.5px;
-	margin-right:3px;
-	color:$font_light;
-}
-.shop_header{
-	height:52px;
-	line-height:52px;
-	text-align:center;
-	color:$main_color;
-	font-size:18.75px;
-	position: relative;
-	background:$bg_white;
-	.to_shop{
-		font-size: 15px;
-		background:$bg_white;
-		position: absolute;
-		right: 3%;
-		.icon{
-			font-size: 12.5px;
-			color:$main_color;
-		}
-	}
-	.shop_back{
-		font-size:15.6px;
-		color:$main_color;
-		position:absolute;
-		left:3%;
-	}
-}
-.has_footer{
-	padding-bottom:56.25px;
-}
 .content{
 	.bg_ph{
 		background: $bg_ph;
@@ -87,7 +29,7 @@ p{margin:0;}
 			-moz-border-radius: 100%;
 		}
 		p{
-			font-size:15px;
+			font-size:$fs24;
 			color:$font_light;
 			padding-top:13px;
 		}
@@ -121,7 +63,7 @@ p{margin:0;}
 	}
 	.nav_state_all{
 		.nav_content{
-			font-size: 15px;
+			font-size: $fs24;
 			color: $font_light;
 			height: 37.5px;
 			line-height: 37.5px;
@@ -142,7 +84,7 @@ p{margin:0;}
 	}
 	.nav_state_finish{
 		.nav_content{
-			font-size: 15px;
+			font-size: $fs24;
 			color: $font_light;
 			height: 37.5px;
 			line-height: 37.5px;
@@ -162,7 +104,7 @@ p{margin:0;}
 	}
 	.nav_state_no_f{
 		.nav_content{
-			font-size: 15px;
+			font-size: $fs24;
 			color: $font_light;
 			height: 37.5px;
 			line-height: 37.5px;
@@ -184,7 +126,7 @@ p{margin:0;}
 	.search{
 		height: 43.75px;
 		line-height: 43.75px;
-		font-size: 12.5px;
+		font-size: $fs20;
 	}
 	.bg_ul_content{
 		background: $bg_color;
@@ -208,13 +150,13 @@ p{margin:0;}
 				float: right;
 			}
 			.f_24{
-				font-size: 15px;
+				font-size: $fs24;
 			}
 			.f_20{
-				font-size: 12.5px;
+				font-size: $fs20;
 			}
 			.f_18{
-				font-size: 11.25px;
+				font-size: $fs18;
 			}
 			.p_l{
 				padding-right: 6%;
@@ -238,7 +180,7 @@ p{margin:0;}
 			color:$bg_white;
 		}
 		.text{
-			font-size:11.25px;
+			font-size:$fs18;
 			margin-top:5px;
 			color:$font_light;
 		}
@@ -272,7 +214,7 @@ p{margin:0;}
 				border-right:1px solid $border_color;
 			}
 			.title{
-				font-size:15px;
+				font-size:$fs24;
 				color:$font_light;
 				padding-top:31.25px;
 				display: inline-block;
@@ -300,7 +242,7 @@ p{margin:0;}
 					vertical-align: middle;
 				}
 				.text{
-					font-size:18.75px;
+					font-size:$fs30;
 					vertical-align: middle;
 					.circle{
 						height:10px;
@@ -325,7 +267,7 @@ p{margin:0;}
 			display: inline-block;
 			margin-right:20px;
 			color:$font_light;
-			font-size:12.5px;
+			font-size:$fs20;
 		}
 	}
 	.shop_order_info{
@@ -337,10 +279,21 @@ p{margin:0;}
 			margin-bottom:0;
 			span{
 				float:right;
-				font-size:12.5px;
+				font-size:$fs20;
 				color:#d1d1d1;
 			}
-			font-size:15px;
+			.btn{
+				height:21.8px;
+				line-height: 21.8px;
+				border:1px solid $red_color;
+				padding:0 10px;
+				font-size:$fs20;
+				color:$red_color;
+				background:$bg_white;
+				float:right;
+				margin-top:12px;
+			}
+			font-size:$fs24;
 			color:$font_light;
 		}
 		.shop_order_user{
@@ -351,10 +304,10 @@ p{margin:0;}
 				}
 				border-top:1px solid $bg_white;
 				line-height:29.5px;
-				font-size:15px;
+				font-size:$fs24;
 				color:$font_light;
 				span{
-					font-size:12.5px;
+					font-size:$fs20;
 					float:right;
 				}
 			}
@@ -364,10 +317,10 @@ p{margin:0;}
 			li{
 				border-bottom:1px solid $bg_white;
 				line-height:29.5px;
-				font-size:12.5px;
+				font-size:$fs20;
 				color:$font_light;
 				span{
-					font-size:12.5px;
+					font-size:$fs20;
 					float:right;
 				}
 				.big{
@@ -378,7 +331,7 @@ p{margin:0;}
 		.shop_order_ads{
 			padding:15.5px 0 48.75px;
 			h2{
-				font-size:15px;
+				font-size:$fs24;
 				color:$font_light;
 				font-weight:normal;
 				padding-bottom:5px;
@@ -386,10 +339,10 @@ p{margin:0;}
 			li{
 				border-bottom:1px solid $bg_white;
 				line-height:29.5px;
-				font-size:12.5px;
+				font-size:$fs20;
 				color:$font_light;
 				span{
-					font-size:12.5px;
+					font-size:$fs20;
 				}
 				.big{
 					font-size: 16.25px;
@@ -397,7 +350,7 @@ p{margin:0;}
 			}
 		}
 	}
-	.shop_service_nav{
+	.shop_service_nav,.shop_spa_nav{
 		background:$bg_white;
 		& >div{
 			text-align:center;
@@ -431,7 +384,7 @@ p{margin:0;}
 						border-top:none;
 					}
 					border-top:1px solid $border_color;
-					font-size:15px;
+					font-size:$fs24;
 					color:$font_light;
 				}
 			}
@@ -440,11 +393,54 @@ p{margin:0;}
 			border-right:1px solid $border_color;
 		}
 	}
+	.shop_spa_nav{
+		position:relative;
+		& >div{
+			.title{
+				color:$gray_color;
+			}
+			.triangle{
+				right:25px;
+				border-color:$gray_color transparent transparent transparent;;
+			}
+		}
+		.shop_all_spa,.shop_all_trade{
+			border-right:1px solid $border_color;
+		}
+		.all_spa_list,
+		.all_trade_list,
+		.all_sort_list{
+			display: none;
+			width:100%;
+			position:absolute;
+			top:37.5px;
+			left:0;
+			background:#f0f0f0;
+			height:auto;
+			padding:17.5px 0 11.5px;
+			text-align: justify;
+			.list{
+				padding:0 3%;
+				a{
+					display: inline-block;
+					width:32%;
+					border:1px solid $border_color;
+					text-align:center;
+					color:$font_light;
+					background: $bg_white;
+					margin-bottom:6px;
+				}
+			}
+		}
+	}
 	.shop_service_nav1{
 		.shop_all_svice{
 			border-right:1px solid $red_color;
 			border-top:1px solid $red_color;
 			border-bottom:1px solid $red_color;
+			.title{
+				color:$red_color;
+			}
 			.triangle{
 				border-color:$red_color transparent transparent transparent;
 				transform:rotate(180deg) translate(0,6px);
@@ -453,6 +449,26 @@ p{margin:0;}
 			ul{
 				display: block;
 			}
+		}
+		.shop_all_spa{
+			border-right:1px solid $red_color;
+			border-top:1px solid $red_color;
+			border-bottom:1px solid $red_color;
+			.title{
+				color:$red_color;
+			}
+			.triangle{
+				border-color:$red_color transparent transparent transparent;
+				transform:rotate(180deg) translate(0,6px);
+				-webkit-transform:rotate(180deg) translate(0,6px);
+			}
+		}
+		.all_spa_list{
+			display: block;
+		}
+		.all_trade_list,
+		.all_sort_list{
+			display: none;
 		}
 	}
 	.shop_service_nav2{
@@ -472,8 +488,51 @@ p{margin:0;}
 				display: block;
 			}
 		}
+		.shop_all_spa{
+			border-right:none;
+		}
+		.shop_all_trade{
+			border:1px solid $red_color;
+			.title{
+				color:$red_color;
+			}
+			.triangle{
+				border-color:$red_color transparent transparent transparent;
+				transform:rotate(180deg) translate(0,6px);
+				-webkit-transform:rotate(180deg) translate(0,6px);
+			}
+		}
+		.all_trade_list{
+			display: block;
+		}
+		.all_spa_list,
+		.all_sort_list{
+			display: none;
+		}
 	}
-	.shop_svice_list{
+	.shop_service_nav3{
+		.shop_all_sort{
+			border-left:1px solid $red_color;
+			border-top:1px solid $red_color;
+			border-bottom:1px solid $red_color;
+			.title{
+				color:$red_color;
+			}
+			.triangle{
+				border-color:$red_color transparent transparent transparent;
+				transform:rotate(180deg) translate(0,6px);
+				-webkit-transform:rotate(180deg) translate(0,6px);
+			}
+		}
+		.all_sort_list{
+			display: block;
+		}
+		.all_spa_list,
+		.all_trade_list{
+			display: none;
+		}
+	}
+	.shop_svice_list,.shop_spa_list{
 		padding:0 3%;
 		li{
 			padding:16.8px 0;
@@ -490,7 +549,7 @@ p{margin:0;}
 				width:35%;
 				float:left;
 				h2{
-					font-size:15px;
+					font-size:$fs24;
 					font-weight: normal;
 					color:$font_dark;
 					margin-bottom:10px;
@@ -508,10 +567,10 @@ p{margin:0;}
 				p.rate{
 					span{
 						color:$font_light;
-						font-size:11.25px;
+						font-size:$fs18;
 					}
 					.price{
-						font-size:15px;
+						font-size:$fs24;
 						color:$red_color;
 						margin-left:5px;
 					}
@@ -524,6 +583,33 @@ p{margin:0;}
 						color:$pink_bg;
 						font-size:13.75px;
 					}
+				}
+			}
+		}
+	}
+	.shop_spa_list{
+		li{
+			.shop_svice_info{
+				width:54%;
+				.icon{
+					margin-left:5px;
+					color:$red_color;
+					font-size:15.6px;
+				}
+			}
+			.shop_svice_price{
+				width:16%;
+				color:$font_light;
+				.now_price{
+					color:$red_color;
+					font-size:$fs24;
+					padding-bottom:5px;
+					span{
+						font-size:$fs20;
+					}
+				}
+				.sell{
+					padding-top:30px;
 				}
 			}
 		}
@@ -544,8 +630,20 @@ p{margin:0;}
 			-webkit-border-radius:5px;
 			-moz-border-radius:5px;
 			border-radius:5px;
-			font-size:15px;
+			font-size:$fs24;
 			margin:0 8.5%;
+		}
+		.w_btn{
+			height:36.25px;
+			line-height: 36.25px;
+			border:1px solid $red_color;
+			background:$bg_white;
+			color:$red_color;
+			width:33%;
+		}
+		.r_btn{
+			width:33%;
+			float:right;
 		}
 	}
 	.shop_techn_list{
@@ -560,17 +658,17 @@ p{margin:0;}
 					vertical-align: middle;
 					color:$font_light;
 					.name{
-						font-size:15px;
+						font-size:$fs24;
 						color:$font_light;
 						margin-right:5px;
 						vertical-align: middle;
 					}
 					.text{
 						color:$gray_color;
-						font-size:11.25px;
+						font-size:$fs18;
 						margin-left:10px;
 						vertical-align: middle;
-						font-size:12.5px;
+						font-size:$fs20;
 					}
 				}
 			}
@@ -589,7 +687,7 @@ p{margin:0;}
 					font-size:13.75px;
 				}
 				span{
-					font-size:11.25px;
+					font-size:$fs18;
 					color:$gray_color;
 				}
 			}
@@ -620,25 +718,103 @@ p{margin:0;}
 		}
 
 	}
-}
-footer{
-	text-align:center;
-	width:100%;
-	position:fixed;
-	bottom:0;
-	height:56.25px;
-	background:$gray_e;
-	.current{
-		.icon,.text{
-			color:$main_color;
+	.icon_auth,.icon_fine{
+		height:16px;
+		width:16px;
+		text-align:center;
+		line-height: 16px;
+		font-size: $fs20;
+		display: inline-block;
+		margin-right:3px;
+		color:$bg_white;
+	}
+	.icon_auth{
+		background:$red_color;
+	}
+	.icon_fine{
+		background:#ac295b;
+	}
+	.swiper-container{
+		img{
+			width:100%;
+		}
+		.swiper-pagination{
+			.swiper-pagination-bullet-active{
+				background:$bg_white;
+			}
 		}
 	}
-	.icon{
-		font-size:23px;
-		color:$font_light;
-	}
-	.text{
-		font-size:12.5px;
-		color:$font_light;
+	.custom_shop_info{
+		.info_block{
+			padding:0 3%;
+			& >li{
+				color:$font_light;
+				font-size:$fs20;
+				&:first-child{
+					border-top:none;
+				}
+				padding:15px 0;
+				border-top:1px solid $border_color;
+				.right_phone{
+					float:right;
+					border-left:1px solid $border_color;
+					font-size:$fs38;
+					height:25px;
+					line-height:25px;
+					padding:0 2px 0 5px;
+					display:info_block;
+					color:$red_color;
+				}
+				.shop_name{
+					font-size:$fs24;
+					color:$gray_39;
+				}
+				.score{
+					font-size:$fs24;
+					color:#fbb84f;
+					margin-left:5px;
+				}
+				.shop_info_title,
+				.shop_info_block{
+					padding:0;
+				}
+				ul{
+					margin:-10px 0;
+					&>li{
+						&:first-child{
+							border-top:none;
+						}
+						padding:10px 0;
+						border-top:1px solid $border_color;
+						.red_text{
+							color:$red_color;
+							font-size: $fs24;
+							.rmb{
+								font-size:$fs20;
+							}
+						}
+						.more{
+							color:$red_color;
+						}
+						.date{
+							text-align:right;
+							padding-right:10px;
+						}
+						.assess{
+							padding-top:5px;
+						}
+						.shop_info_text{
+							p{
+								padding-bottom:5px;
+								.icon{
+									color:$red_color;
+									margin-left:10px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
