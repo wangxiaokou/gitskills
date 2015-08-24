@@ -237,15 +237,20 @@ a {
 .gray_bg{
     background:$bg_color;
 }
-.ready_star{
-    font-size:$fs20;
+.ready_star,.star{
+    width:16px;
+    height:16px;
+    display: inline-block;
+    vertical-align: middle;
+    background:url(../images/icon/icon_y_star.png) center center no-repeat;
+    background-size:cover;
     margin-right:3px;
-    color:#fbb84f;
 }
 .star{
-    font-size:$fs20;
-    margin-right:3px;
-    color:$font_light;
+    width:15px;
+    height:15px;
+    background:url(../images/icon/icon_g_star.png) center center no-repeat;
+    background-size:cover;
 }
 .shop_header{
     height:52px;
@@ -260,20 +265,39 @@ a {
         background:$bg_white;
         position: absolute;
         right: 3%;
-        .icon{
-            font-size: $fs20;
-            color:$main_color;
+        color:$pink_bg;
+        span{
+            width:11.25px;
+            height:11.25px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon_p_down{
+            background:url(../images/icon/icon_p_next.png) center center no-repeat;
+            background-size:contain;
+        }
+        .icon_search{
+            width:21.6px;
+            height:21.6px;
+            background:url(../images/icon/icon_p_seach.png) center center no-repeat;
+            background-size:contain;
         }
     }
     .shop_back{
-        font-size:$fs26;
         color:$main_color;
         position:absolute;
         left:3%;
+        width:16.25px;
+        height:16.25px;
+        display: inline-block;
+        vertical-align: middle;
+        background:url(../images/icon/icon_back.png) center center no-repeat;
+        background-size:contain;
+        top:16px;
     }
 }
 .has_footer{
-    padding-bottom:56.25px;
+    padding-bottom:70px;
 }
 footer{
     text-align:center;
@@ -287,12 +311,52 @@ footer{
             color:$main_color;
         }
     }
-    .icon{
-        font-size:23px;
-        color:$font_light;
+    a{
+        padding-top:7px;
+        span{
+            width:25px;
+            height:25px;
+            display: block;
+            margin:0 auto 2px;
+        }
+        .icon_index{
+            background:url(../images/icon/icon_g_home.png) left top no-repeat;
+            background-size:contain;
+        }
+        .icon_msg{
+            background:url(../images/icon/icon_g_msg.png) left top no-repeat;
+            background-size:contain;
+        }
+        .icon_income{
+            background:url(../images/icon/icon_g_rmb.png) left top no-repeat;
+            background-size:contain;
+        }
+        .icon_my{
+            background:url(../images/icon/icon_g_user.png) left top no-repeat;
+            background-size:contain;
+        }
+    }
+    a.current{
+        .icon_index{
+            background:url(../images/icon/icon_p_home.png) left top no-repeat;
+            background-size:contain;
+        }
+        .icon_msg{
+            background:url(../images/icon/icon_p_msg.png) left top no-repeat;
+            background-size:contain;
+        }
+        .icon_income{
+            background:url(../images/icon/icon_p_rmb.png) left top no-repeat;
+            background-size:contain;
+        }
+        .icon_my{
+            background:url(../images/icon/icon_p_user.png) left top no-repeat;
+            background-size:contain;
+        }
     }
     .text{
         font-size:$fs20;
+        line-height: 1.2em;
         color:$font_light;
     }
 }

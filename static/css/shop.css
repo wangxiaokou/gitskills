@@ -54,35 +54,49 @@ p {
     text-align: center;
     font-size: 30px;
     color: #4d4d4d; }
-.content .nav_state_all .nav_content {
-  font-size: 1.5rem;
-  color: #737373;
-  height: 37.5px;
-  line-height: 37.5px;
-  text-align: center; }
-.content .nav_state_all .nav_all {
-  border: 1px solid #f34747;
-  border-left: none; }
-.content .nav_state_all .nav_finish {
-  border: 1px solid #737373;
-  border-left: none; }
-.content .nav_state_all .nav_no_f {
-  border-bottom: 1px solid #737373;
-  border-top: 1px solid #737373; }
+.content .nav_state_all {
+  background: #fff; }
+  .content .nav_state_all .nav_content {
+    font-size: 1.5rem;
+    color: #737373;
+    height: 37.5px;
+    line-height: 37.5px;
+    text-align: center; }
+  .content .nav_state_all .nav_all {
+    border: 1px solid #f34747;
+    border-left: none; }
+    .content .nav_state_all .nav_all div {
+      color: #f34747; }
+  .content .nav_state_all .nav_finish {
+    border: 1px solid #ccc;
+    border-left: none; }
+    .content .nav_state_all .nav_finish div {
+      color: #aeaeae; }
+  .content .nav_state_all .nav_no_f {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc; }
+    .content .nav_state_all .nav_no_f div {
+      color: #aeaeae; }
 .content .nav_state_finish .nav_content {
   font-size: 1.5rem;
-  color: #737373;
+  color: #aeaeae;
   height: 37.5px;
   line-height: 37.5px;
   text-align: center; }
 .content .nav_state_finish .nav_all {
-  border-bottom: 1px solid #737373;
-  border-top: 1px solid #737373; }
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc; }
+  .content .nav_state_finish .nav_all div {
+    color: #aeaeae; }
 .content .nav_state_finish .nav_finish {
   border: 1px solid #f34747; }
+  .content .nav_state_finish .nav_finish div {
+    color: #f34747; }
 .content .nav_state_finish .nav_no_f {
-  border-bottom: 1px solid #737373;
-  border-top: 1px solid #737373; }
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc; }
+  .content .nav_state_finish .nav_no_f div {
+    color: #aeaeae; }
 .content .nav_state_no_f .nav_content {
   font-size: 1.5rem;
   color: #737373;
@@ -90,42 +104,71 @@ p {
   line-height: 37.5px;
   text-align: center; }
 .content .nav_state_no_f .nav_all {
-  border: 1px solid #737373;
+  border: 1px solid #ccc;
   border-left: none; }
+  .content .nav_state_no_f .nav_all div {
+    color: #aeaeae; }
 .content .nav_state_no_f .nav_finish {
-  border-bottom: 1px solid #737373;
-  border-top: 1px solid #737373; }
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc; }
+  .content .nav_state_no_f .nav_finish div {
+    color: #aeaeae; }
 .content .nav_state_no_f .nav_no_f {
   border: 1px solid #f34747;
   border-right: none; }
+  .content .nav_state_no_f .nav_no_f div {
+    color: #f34747; }
 .content .search {
   height: 43.75px;
   line-height: 43.75px;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  width: 100%; }
 .content .bg_ul_content {
   background: #f8f8f8;
-  border-top: 1px solid #737373; }
+  border-top: 1px solid #ccc; }
   .content .bg_ul_content .bg_li {
     padding: 18.75px 2%;
-    border-bottom: 1px solid #737373;
+    border-bottom: 1px solid #ccc;
     margin: 0 3%;
-    position: relative; }
+    position: relative;
+    color: #737373; }
+    .content .bg_ul_content .bg_li .bg_title .bg_s_r {
+      float: right;
+      color: #aeaeae; }
     .content .bg_ul_content .bg_li .p_r {
-      font-size: 14.375px;
       position: absolute;
       top: 50%;
-      right: 3%;
-      margin-top: -6px; }
+      right: 2%;
+      margin-top: -6px;
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../images/icon/icon_right.png) center center no-repeat;
+      background-size: contain; }
+    .content .bg_ul_content .bg_li .bg_d {
+      padding-top: 3px; }
     .content .bg_ul_content .bg_li .bg_s_l {
       float: left; }
+      .content .bg_ul_content .bg_li .bg_s_l .time {
+        font-size: 1.125rem; }
     .content .bg_ul_content .bg_li .bg_s_r {
       float: right; }
+      .content .bg_ul_content .bg_li .bg_s_r .phone_icon {
+        width: 17.5px;
+        height: 17.5px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../images/icon/icon_r_phone.png) center center no-repeat;
+        background-size: contain; }
     .content .bg_ul_content .bg_li .f_24 {
       font-size: 1.5rem; }
     .content .bg_ul_content .bg_li .f_20 {
       font-size: 1.25rem; }
     .content .bg_ul_content .bg_li .f_18 {
       font-size: 1.125rem; }
+    .content .bg_ul_content .bg_li .f_16 {
+      font-size: 1rem; }
     .content .bg_ul_content .bg_li .p_l {
       padding-right: 6%; }
 .content .shop_menu_list {
@@ -134,7 +177,7 @@ p {
   background: #f8f8f8; }
   .content .shop_menu_list .icon {
     height: 56.25px;
-    line-height: 56.25px;
+    line-height: 50.25px;
     width: 56.25px;
     background: #f289b6;
     display: inline-block;
@@ -187,8 +230,6 @@ p {
     padding-top: 31.25px;
     text-align: left; }
     .content .shop_income_menu .shop_income_list .title .icon {
-      font-size: 28.75px;
-      color: #eb608f;
       vertical-align: middle; }
     .content .shop_income_menu .shop_income_list .title .text {
       font-size: 1.875rem;
@@ -509,7 +550,8 @@ p {
     .content .shop_techn_list li > div p {
       margin-bottom: 12px;
       vertical-align: middle;
-      color: #737373; }
+      color: #737373;
+      font-size: 1.125rem; }
       .content .shop_techn_list li > div p .name {
         font-size: 1.5rem;
         color: #737373;
@@ -519,15 +561,18 @@ p {
         color: #aeaeae;
         font-size: 1.125rem;
         margin-left: 10px;
-        vertical-align: middle;
-        font-size: 1.25rem; }
+        vertical-align: middle; }
     .content .shop_techn_list li .detail {
       position: absolute;
-      right: 5%;
+      right: 3%;
       top: 50%;
-      font-size: 1.375rem;
       margin-top: -8px;
-      color: #737373; }
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url(../images/icon/icon_right.png) center center no-repeat;
+      background-size: contain; }
     .content .shop_techn_list li .shop_detail_info p {
       color: #737373;
       margin: 0;
@@ -549,7 +594,8 @@ p {
     line-height: 37.5px;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    position: relative; }
+    position: relative;
+    font-size: 1.5rem; }
     .content .shop_detail_nav > div span {
       color: #aeaeae; }
   .content .shop_detail_nav .shop_detail_shop {

@@ -73,6 +73,7 @@ p{margin:0;}
 		}
 	}
 	.nav_state_all{
+		background: $bg_white;
 		.nav_content{
 			font-size: $fs24;
 			color: $font_light;
@@ -83,34 +84,52 @@ p{margin:0;}
 		.nav_all{
 			border: 1px solid $red_color;
 			border-left: none;
+			div{
+				color:$red_color;
+			}
 		}
 		.nav_finish{
-			border: 1px solid $font_light;
+			border: 1px solid $border_color;
 			border-left: none;
+			div{
+				color:$gray_color;
+			}
 		}
 		.nav_no_f{
-			border-bottom: 1px solid $font_light;
-			border-top: 1px solid $font_light;
+			border-bottom: 1px solid $border_color;
+			border-top: 1px solid $border_color;
+			div{
+				color:$gray_color;
+			}
 		}
 	}
 	.nav_state_finish{
 		.nav_content{
 			font-size: $fs24;
-			color: $font_light;
+			color: $gray_color;
 			height: 37.5px;
 			line-height: 37.5px;
 			text-align: center;
 		}
 		.nav_all{
-			border-bottom: 1px solid $font_light;
-			border-top: 1px solid $font_light;
+			border-bottom: 1px solid $border_color;
+			border-top: 1px solid $border_color;
+			div{
+				color:$gray_color;
+			}
 		}
 		.nav_finish{
 			border: 1px solid $red_color;
+			div{
+				color:$red_color;
+			}
 		}
 		.nav_no_f{
-			border-bottom: 1px solid $font_light;
-			border-top: 1px solid $font_light;
+			border-bottom: 1px solid $border_color;
+			border-top: 1px solid $border_color;
+			div{
+				color:$gray_color;
+			}
 		}
 	}
 	.nav_state_no_f{
@@ -122,43 +141,80 @@ p{margin:0;}
 			text-align: center;
 		}
 		.nav_all{
-			border: 1px solid $font_light;
+			border: 1px solid $border_color;
 			border-left: none;
+			div{
+				color:$gray_color;
+			}
 		}
 		.nav_finish{
-			border-bottom: 1px solid $font_light;
-			border-top: 1px solid $font_light;
+			border-bottom: 1px solid $border_color;
+			border-top: 1px solid $border_color;
+			div{
+				color:$gray_color;
+			}
 		}
 		.nav_no_f{
 			border: 1px solid $red_color;
 			border-right: none;
+			div{
+				color:$red_color;
+			}
 		}
 	}
 	.search{
 		height: 43.75px;
 		line-height: 43.75px;
 		font-size: $fs20;
+		width:100%;
 	}
 	.bg_ul_content{
 		background: $bg_color;
-		border-top: 1px solid $font_light;
+		border-top: 1px solid $border_color;
 		.bg_li{
 			padding: 18.75px 2%;
-			border-bottom: 1px solid $font_light;
+			border-bottom: 1px solid $border_color;
 			margin: 0 3%;
 			position: relative;
+			color:$font_light;
+			.bg_title{
+				.bg_s_r{
+					float: right;
+					color:$gray_color;
+				}
+			}
 			.p_r{
-				font-size: 14.375px;
 				position: absolute;
 				top: 50%;
-				right: 3%;
+				right: 2%;
 				margin-top: -6px;
+				width:15px;
+	            height:15px;
+	            display: inline-block;
+	            vertical-align: middle;
+	            background:url(../images/icon/icon_right.png) center center no-repeat;
+            	background-size:contain;
+			}
+			.bg_d{
+				padding-top:3px;
 			}
 			.bg_s_l{
-			float: left;
+				float: left;
+				.time{
+					font-size:$fs18;
+				}
+
 			}
 			.bg_s_r{
 				float: right;
+				.phone_icon{
+					width:17.5px;
+		            height:17.5px;
+		            display: inline-block;
+		            vertical-align: middle;
+		            background:url(../images/icon/icon_r_phone.png) center center no-repeat;
+	            	background-size:contain;
+				}
 			}
 			.f_24{
 				font-size: $fs24;
@@ -168,6 +224,9 @@ p{margin:0;}
 			}
 			.f_18{
 				font-size: $fs18;
+			}
+			.f_16{
+				font-size: $fs16;
 			}
 			.p_l{
 				padding-right: 6%;
@@ -180,7 +239,7 @@ p{margin:0;}
 		background:$bg_color;
 		.icon{
 			height:56.25px;
-			line-height:56.25px;
+			line-height:50.25px;
 			width:56.25px;
 			background:$pink_bg;
 			display:inline-block;
@@ -248,8 +307,6 @@ p{margin:0;}
 				padding-top:31.25px;
 				text-align:left;
 				.icon{
-					font-size:28.75px;
-					color:$main_color;
 					vertical-align: middle;
 				}
 				.text{
@@ -668,6 +725,7 @@ p{margin:0;}
 					margin-bottom:12px;
 					vertical-align: middle;
 					color:$font_light;
+					font-size:$fs18;
 					.name{
 						font-size:$fs24;
 						color:$font_light;
@@ -679,17 +737,20 @@ p{margin:0;}
 						font-size:$fs18;
 						margin-left:10px;
 						vertical-align: middle;
-						font-size:$fs20;
 					}
 				}
 			}
 			.detail{
 				position:absolute;
-				right:5%;
+				right:3%;
 				top:50%;
-				font-size:$fs22;
 				margin-top:-8px;
-				color:$font_light;
+				width:15px;
+	            height:15px;
+	            display: inline-block;
+	            vertical-align: middle;
+	            background:url(../images/icon/icon_right.png) center center no-repeat;
+            	background-size:contain;
 			}
 			.shop_detail_info{
 				p{
@@ -720,6 +781,7 @@ p{margin:0;}
 			border-top:1px solid $border_color;
 			border-bottom:1px solid $border_color;
 			position:relative;
+			font-size:$fs24;
 			span{
 				color:$gray_color;
 			}

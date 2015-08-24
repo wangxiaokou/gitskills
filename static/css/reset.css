@@ -186,15 +186,20 @@ a {
 .gray_bg {
   background: #f8f8f8; }
 
-.ready_star {
-  font-size: 1.25rem;
-  margin-right: 3px;
-  color: #fbb84f; }
+.ready_star, .star {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../images/icon/icon_y_star.png) center center no-repeat;
+  background-size: cover;
+  margin-right: 3px; }
 
 .star {
-  font-size: 1.25rem;
-  margin-right: 3px;
-  color: #737373; }
+  width: 15px;
+  height: 15px;
+  background: url(../images/icon/icon_g_star.png) center center no-repeat;
+  background-size: cover; }
 
 .shop_header {
   height: 52px;
@@ -208,18 +213,35 @@ a {
     font-size: 15px;
     background: #fff;
     position: absolute;
-    right: 3%; }
-    .shop_header .to_shop .icon {
-      font-size: 1.25rem;
-      color: #eb608f; }
+    right: 3%;
+    color: #f289b6; }
+    .shop_header .to_shop span {
+      width: 11.25px;
+      height: 11.25px;
+      display: inline-block;
+      vertical-align: middle; }
+    .shop_header .to_shop .icon_p_down {
+      background: url(../images/icon/icon_p_next.png) center center no-repeat;
+      background-size: contain; }
+    .shop_header .to_shop .icon_search {
+      width: 21.6px;
+      height: 21.6px;
+      background: url(../images/icon/icon_p_seach.png) center center no-repeat;
+      background-size: contain; }
   .shop_header .shop_back {
-    font-size: 1.56rem;
     color: #eb608f;
     position: absolute;
-    left: 3%; }
+    left: 3%;
+    width: 16.25px;
+    height: 16.25px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/icon/icon_back.png) center center no-repeat;
+    background-size: contain;
+    top: 16px; }
 
 .has_footer {
-  padding-bottom: 56.25px; }
+  padding-bottom: 70px; }
 
 footer {
   text-align: center;
@@ -230,11 +252,40 @@ footer {
   background: #eee; }
   footer .current .icon, footer .current .text {
     color: #eb608f; }
-  footer .icon {
-    font-size: 23px;
-    color: #737373; }
+  footer a {
+    padding-top: 7px; }
+    footer a span {
+      width: 25px;
+      height: 25px;
+      display: block;
+      margin: 0 auto 2px; }
+    footer a .icon_index {
+      background: url(../images/icon/icon_g_home.png) left top no-repeat;
+      background-size: contain; }
+    footer a .icon_msg {
+      background: url(../images/icon/icon_g_msg.png) left top no-repeat;
+      background-size: contain; }
+    footer a .icon_income {
+      background: url(../images/icon/icon_g_rmb.png) left top no-repeat;
+      background-size: contain; }
+    footer a .icon_my {
+      background: url(../images/icon/icon_g_user.png) left top no-repeat;
+      background-size: contain; }
+  footer a.current .icon_index {
+    background: url(../images/icon/icon_p_home.png) left top no-repeat;
+    background-size: contain; }
+  footer a.current .icon_msg {
+    background: url(../images/icon/icon_p_msg.png) left top no-repeat;
+    background-size: contain; }
+  footer a.current .icon_income {
+    background: url(../images/icon/icon_p_rmb.png) left top no-repeat;
+    background-size: contain; }
+  footer a.current .icon_my {
+    background: url(../images/icon/icon_p_user.png) left top no-repeat;
+    background-size: contain; }
   footer .text {
     font-size: 1.25rem;
+    line-height: 1.2em;
     color: #737373; }
 
 /*# sourceMappingURL=reset.css.map */
