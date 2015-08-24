@@ -48,7 +48,7 @@ p {
   .content .shop_show_number .shop_list_info {
     border-right: 1px solid #ccc; }
   .content .shop_show_number .title {
-    font-size: 13.75px;
+    font-size: 1.375rem;
     color: #737373; }
   .content .shop_show_number .number {
     text-align: center;
@@ -451,10 +451,10 @@ p {
       .content .shop_svice_list li .shop_svice_price .operate, .content .shop_spa_list li .shop_svice_price .operate {
         margin-top: 18.75px;
         color: #f289b6;
-        font-size: 13.75px; }
+        font-size: 1.375rem; }
         .content .shop_svice_list li .shop_svice_price .operate a, .content .shop_spa_list li .shop_svice_price .operate a {
           color: #f289b6;
-          font-size: 13.75px; }
+          font-size: 1.375rem; }
 .content .shop_spa_list li .shop_svice_info {
   width: 54%; }
   .content .shop_spa_list li .shop_svice_info .icon {
@@ -525,13 +525,13 @@ p {
       position: absolute;
       right: 5%;
       top: 50%;
-      font-size: 13.75px;
+      font-size: 1.375rem;
       margin-top: -8px;
       color: #737373; }
     .content .shop_techn_list li .shop_detail_info p {
       color: #737373;
       margin: 0;
-      font-size: 13.75px; }
+      font-size: 1.375rem; }
     .content .shop_techn_list li .shop_detail_info span {
       font-size: 1.125rem;
       color: #aeaeae; }
@@ -583,7 +583,7 @@ p {
     .content .custom_shop_info .info_block > li .right_phone {
       float: right;
       border-left: 1px solid #ccc;
-      font-size: 24.3px;
+      font-size: 2.43rem;
       height: 25px;
       line-height: 25px;
       padding: 0 2px 0 5px;
