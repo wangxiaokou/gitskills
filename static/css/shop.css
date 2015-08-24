@@ -2,9 +2,9 @@ p {
   margin: 0; }
 
 .content .bg_ph {
-  background: #f9f8f9;
   padding: 31.25px 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 16.25px; }
   .content .bg_ph .print {
     display: inline-block;
     height: 75px;
@@ -14,6 +14,13 @@ p {
     line-height: 75px;
     border-radius: 100%;
     background: #eb608f; }
+.content .bg_w .shop_abt {
+  width: 97%;
+  height: 40.625px;
+  border-bottom: 1px solid #f8f8f8;
+  line-height: 40.625px;
+  margin-left: 3%;
+  display: block; }
 .content .shop_show {
   background: #f8f8f8;
   text-align: center;
