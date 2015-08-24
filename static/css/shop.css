@@ -14,13 +14,19 @@ p {
     line-height: 75px;
     border-radius: 100%;
     background: #eb608f; }
-.content .bg_w .shop_abt {
-  width: 97%;
-  height: 40.625px;
-  border-bottom: 1px solid #f8f8f8;
-  line-height: 40.625px;
-  margin-left: 3%;
-  display: block; }
+.content .bg_w {
+  padding-left: 3%;
+  background: #fff; }
+  .content .bg_w .shop_abt {
+    width: 100%;
+    height: 40.625px;
+    line-height: 40.625px;
+    border-bottom: 1px solid #f8f8f8;
+    display: block; }
+.content .shop_itd {
+  height: 150px;
+  width: 100%;
+  margin-top: 15.625px; }
 .content .shop_show {
   background: #f8f8f8;
   text-align: center;
