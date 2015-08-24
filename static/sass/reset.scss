@@ -1,5 +1,5 @@
 
-
+@import "theme";
 /*------------------------------------------normalize.css v3.0.1------------------------------------- */
 html {
     margin: 0;
@@ -9,7 +9,15 @@ html {
     vertical-align: baseline;
     background: transparent;
 }
+html{
+    font-size:80%;
+}
 
+@media screen and (max-width: 320px) {
+    html{
+        font-size:60%;
+    }
+}
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input {
     margin: 0;
     padding: 0;
@@ -38,12 +46,11 @@ template {
 }
 
 body, button, input, optgroup, select, textarea {
-    font: 12px/1.5 Helvetica Neue,tahoma,arial,Microsoft YaHei,"Hiragino Sans GB",\5b8b\4f53;
+    font-family:Helvetica Neue,tahoma,arial,Microsoft YaHei,"Hiragino Sans GB",\5b8b\4f53;
 }
 
 input, select, textarea {
     outline: none;
-    font-size: 12px;
     padding: .5em;
 }
 
@@ -90,7 +97,6 @@ caption, th {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
-    font-size: 12px;
 }
 
 q {
@@ -101,7 +107,6 @@ q {
 
 sub,
 sup {
-    font-size: 12px;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
@@ -188,7 +193,6 @@ pre {
 
 code, kbd, pre, samp {
     font-family: monospace, monospace;
-    font-size: 12px;
 }
 
 a {
@@ -223,4 +227,72 @@ a {
 }
 .vm{
     vertical-align: middle;
+}
+.pink{
+    color:$main_color!important;
+}
+.red{
+    color:$red_color!important;
+}
+.gray_bg{
+    background:$bg_color;
+}
+.ready_star{
+    font-size:$fs20;
+    margin-right:3px;
+    color:#fbb84f;
+}
+.star{
+    font-size:$fs20;
+    margin-right:3px;
+    color:$font_light;
+}
+.shop_header{
+    height:52px;
+    line-height:52px;
+    text-align:center;
+    color:$main_color;
+    font-size:$fs30;
+    position: relative;
+    background:$bg_white;
+    .to_shop{
+        font-size: 15px;
+        background:$bg_white;
+        position: absolute;
+        right: 3%;
+        .icon{
+            font-size: $fs20;
+            color:$main_color;
+        }
+    }
+    .shop_back{
+        font-size:$fs26;
+        color:$main_color;
+        position:absolute;
+        left:3%;
+    }
+}
+.has_footer{
+    padding-bottom:56.25px;
+}
+footer{
+    text-align:center;
+    width:100%;
+    position:fixed;
+    bottom:0;
+    height:56.25px;
+    background:$gray_e;
+    .current{
+        .icon,.text{
+            color:$main_color;
+        }
+    }
+    .icon{
+        font-size:23px;
+        color:$font_light;
+    }
+    .text{
+        font-size:$fs20;
+        color:$font_light;
+    }
 }
