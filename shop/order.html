@@ -8,18 +8,20 @@
 <link rel="stylesheet" type="text/css" href="../static/css/reset.css">
 <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../static/css/shop.css">
+<script type="text/javascript" src="../static/js/zepto.min.js"></script>
+<script type="text/javascript" src="../static/js/fastclick.js"></script>
+<script type="text/javascript" src="../static/js/shop.js"></script>
 <title>订单管理</title>
 </head>
 <body class="gray_bg">
-	<header class="shop_header">
-		订单管理
+	<header class="shop_header"><a href="javascript:history.go(-1);" class="shop_back"></a>订单管理
 		<span class="to_shop">
 			到店
 			<span class="icon_p_down"></span>
 		</span>
 	</header>
 	<article class="content has_footer">
-		<nav class="nav_state_all cf">
+		<nav class="nav_state_all cf" id="orderNav">
 			<div class="col-xs-4 nav_content nav_all">
 				<div>全部</div>
 			</div>
@@ -33,103 +35,109 @@
 		<input class="search" placeholder="输入订单号、手机号搜索"></input>
 		<ul class="bg_ul_content">
 			<li class="bg_li">
-				<div class="bg_title cf">
-					<span class="bg_s_l f_24 red">
-						服务中
-					</span>
-					<span class="bg_s_r f_16">
-						下单时间：2015-07-29
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						张女士 <span class="time">2015-08-10到店</span>
-					</span>
-					<span class="bg_s_r f_16 red p_l">
-						订单号D20150729153408
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						中级技师小李
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						精油按摩SPA套餐￥459
-					</span>
-					<span class="bg_s_r f_16 p_l">
-						<span class="phone_icon"></span>
-						18222222222
-					</span>
-				</div>
-				<span class="p_r"></span>
+				<a href="order_info.html">
+					<div class="bg_title cf">
+						<span class="bg_s_l f_24 red">
+							服务中
+						</span>
+						<span class="bg_s_r f_16">
+							下单时间：2015-07-29
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							张女士 <span class="time">2015-08-10到店</span>
+						</span>
+						<span class="bg_s_r f_16 red p_l">
+							订单号D20150729153408
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							中级技师小李
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							精油按摩SPA套餐 <span class="fs_gray">￥459</span>
+						</span>
+						<span class="bg_s_r f_16 p_l">
+							<span class="phone_icon"></span>
+							18222222222
+						</span>
+					</div>
+					<span class="p_r"></span>
+				</a>
 			</li>
 			<li class="bg_li">
-				<div class="bg_title cf">
-					<span class="bg_s_l f_24 red">
-						服务中
-					</span>
-					<span class="bg_s_r f_16">
-						下单时间：2015-07-29
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						张女士 <span class="time">2015-08-10到店</span>
-					</span>
-					<span class="bg_s_r f_16 red p_l">
-						订单号D20150729153408
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						中级技师小李
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						精油按摩SPA套餐￥459
-					</span>
-					<span class="bg_s_r f_16 p_l">
-						<span class="phone_icon"></span>
-						18222222222
-					</span>
-				</div>
-				<span class="p_r"></span>
+				<a href="order_info.html">
+					<div class="bg_title cf">
+						<span class="bg_s_l f_24 red">
+							服务中
+						</span>
+						<span class="bg_s_r f_16">
+							下单时间：2015-07-29
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							张女士 <span class="time">2015-08-10到店</span>
+						</span>
+						<span class="bg_s_r f_16 red p_l">
+							订单号D20150729153408
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							中级技师小李
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							精油按摩SPA套餐 <span class="fs_gray">￥459</span>
+						</span>
+						<span class="bg_s_r f_16 p_l">
+							<span class="phone_icon"></span>
+							18222222222
+						</span>
+					</div>
+					<span class="p_r"></span>
+				</a>
 			</li>
 			<li class="bg_li">
-				<div class="bg_title cf">
-					<span class="bg_s_l f_24 red">
-						服务中
-					</span>
-					<span class="bg_s_r f_16">
-						下单时间：2015-07-29
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						张女士 <span class="time">2015-08-10到店</span>
-					</span>
-					<span class="bg_s_r f_16 red p_l">
-						订单号D20150729153408
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						中级技师小李
-					</span>
-				</div>
-				<div class="bg_d cf">
-					<span class="bg_s_l f_18">
-						精油按摩SPA套餐￥459
-					</span>
-					<span class="bg_s_r f_16 p_l">
-						<span class="phone_icon"></span>
-						18222222222
-					</span>
-				</div>
-				<span class="p_r"></span>
+				<a href="order_info.html">
+					<div class="bg_title cf">
+						<span class="bg_s_l f_24 red">
+							服务中
+						</span>
+						<span class="bg_s_r f_16">
+							下单时间：2015-07-29
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							张女士 <span class="time">2015-08-10到店</span>
+						</span>
+						<span class="bg_s_r f_16 red p_l">
+							订单号D20150729153408
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							中级技师小李
+						</span>
+					</div>
+					<div class="bg_d cf">
+						<span class="bg_s_l f_18">
+							精油按摩SPA套餐 <span class="fs_gray">￥459</span>
+						</span>
+						<span class="bg_s_r f_16 p_l">
+							<span class="phone_icon"></span>
+							18222222222
+						</span>
+					</div>
+					<span class="p_r"></span>
+				</a>
 			</li>
 		</ul>
 	</article>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>手机号快捷登录</title>
+<link rel="stylesheet" type="text/css" href="../static/css/reset.css">
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/checkbox.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/shop.css">
+<script type="text/javascript" src="../static/js/zepto.min.js"></script>
+<script type="text/javascript" src="../static/js/fastclick.js"></script>
+<script type="text/javascript" src="../static/js/custom.js"></script>
+</head>
+<body class="gray_bg">
+	<header class="shop_header"><a href="javascript:" class="shop_back"></a>切换地址</header>
+	<article class="content has_footer">
+		<nav class="cf shop_login_nav" id="loginNav">
+			<div class="col-xs-6 login_nav phone current">
+				手机号快捷登录
+			</div>
+			<div class="col-xs-6 login_nav common">
+				普通方式
+			</div>
+		</nav>
+		<div class="shop_phonecommon" id="shopPhoneCommon">
+			<ul class="shop_loginphone_list">
+				<li>
+					<input type="text" placeholder="手机号" />
+					<button id="checkCode">获取验证码</button>
+				</li>
+				<li>
+					<input type="text" placeholder="验证码" />
+				</li>
+			</ul>
+			<div class="phone_btn unable">
+				<button>验证并登录</button>
+			</div>
+		</div>
+		<div class="shop_logincommon" style="display:none;">
+			<ul class="shop_logincommon_list">
+				<li>
+					<img src="../static/images/icon/icon_login_user.png" alt="" style="height:21.25px">
+					<input type="text" placeholder="手机/邮箱/用户名" />
+				</li>
+				<li>
+					<img src="../static/images/icon/icon_g_lock.png" alt="" style="height:21.25px">
+					<input type="text" placeholder="请输入密码" />
+				</li>
+			</ul>
+			<div class="phone_btn">
+				<button>登录</button>
+			</div>
+			<div class="login_link"><a href="">立即注册</a></div>
+		</div>
+	</article>
+</body>
+</html>

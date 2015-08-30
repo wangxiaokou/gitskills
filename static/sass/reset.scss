@@ -10,12 +10,12 @@ html {
     background: transparent;
 }
 html{
-    font-size:80%;
+    font-size:100%;
 }
 
 @media screen and (max-width: 320px) {
     html{
-        font-size:60%;
+        font-size:80%;
     }
 }
 body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input {
@@ -225,6 +225,9 @@ a {
 .fr {
     float: right;
 }
+.tr{
+    text-align: right;
+}
 .vm{
     vertical-align: middle;
 }
@@ -237,6 +240,7 @@ a {
 .gray_bg{
     background:$bg_color;
 }
+.fs_gray{color:$gray_color;}
 .ready_star,.star{
     width:16px;
     height:16px;
@@ -282,6 +286,12 @@ a {
             background:url(../images/icon/icon_p_seach.png) center center no-repeat;
             background-size:contain;
         }
+        .icon_star{
+            width:18.75px;
+            height:18.75px;
+            background:url(../images/icon/icon_p_star.png) center center no-repeat;
+            background-size:contain;
+        }
     }
     .shop_back{
         color:$main_color;
@@ -289,11 +299,12 @@ a {
         left:3%;
         width:16.25px;
         height:16.25px;
+        top:50%;
+        margin-top:-8.125px;
         display: inline-block;
         vertical-align: middle;
         background:url(../images/icon/icon_back.png) center center no-repeat;
         background-size:contain;
-        top:16px;
     }
 }
 .has_footer{
