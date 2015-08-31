@@ -16,13 +16,16 @@ $(function(){
 			 $(this).addClass('current').siblings().removeClass('current');
 			 $('.shop_phonecommon').show();
 			 $('.shop_logincommon').hide();
+			 //ajax请求处
 		}else if(index == 1){
 			 $(this).addClass('current').siblings().removeClass('current');
 			 $('.shop_logincommon').show();
 			 $('.shop_phonecommon').hide();
+			 //ajax请求处
 		}
 	});
 	$('#checkCode').bind('click',function(){
+		//ajax请求处
 		var _this = $(this);
 		if($(this).hasClass('unable')){
 			return;
@@ -65,8 +68,10 @@ $(function(){
 		var index = $(this).index();
 		if(index == '0'){
 			$('#technAssessNav').attr('class','nav_state_all cf');
+			//ajax请求处
 		}else if(index == '1'){
 			$('#technAssessNav').attr('class','nav_state_no_f cf');
+			//ajax请求处
 		}
 	})
 })

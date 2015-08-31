@@ -11,8 +11,7 @@
 <title>订单管理</title>
 </head>
 <body class="gray_bg">
-	<header class="shop_header">
-		订单管理
+	<header class="shop_header"><a href="javascript:history.go(-1);" class="shop_back"></a>订单管理
 		<span class="to_shop">
 			到店
 			<span class="icon_p_down"></span>
@@ -43,15 +42,17 @@
 					</div>
 				</div>
 				<div class="info cf">
-					<div class="col-xs-3">
-						<img src="../static/images/head.jpg" width="80%" alt="">
-					</div>
-					<div class="col-xs-9">
-						<p class="title">都仕雅阁 (朝阳大悦店)</p>
-						<p class="techn">中级技师 小李</p>
-						<p class="type">都仕雅阁精油按摩SPA套餐 <span>￥459</span></p>
-					</div>
-					<span class="detail"></span>
+					<a href="order_info.html">
+						<div class="col-xs-3">
+							<img src="../static/images/head.jpg" width="80%" alt="">
+						</div>
+						<div class="col-xs-9">
+							<p class="title">都仕雅阁 (朝阳大悦店)</p>
+							<p class="techn">中级技师 小李</p>
+							<p class="type">都仕雅阁精油按摩SPA套餐 <span>￥459</span></p>
+						</div>
+						<span class="detail"></span>
+					</a>
 				</div>
 			</li>
 			<li class="bg_li">
@@ -66,15 +67,17 @@
 					</div>
 				</div>
 				<div class="info cf">
-					<div class="col-xs-3">
-						<img src="../static/images/head.jpg" width="80%" alt="">
-					</div>
-					<div class="col-xs-9">
-						<p class="title">都仕雅阁 (朝阳大悦店)</p>
-						<p class="techn">中级技师 小李</p>
-						<p class="type">都仕雅阁精油按摩SPA套餐 <span>￥459</span></p>
-					</div>
-					<span class="detail"></span>
+					<a href="order_info.html">
+						<div class="col-xs-3">
+							<img src="../static/images/head.jpg" width="80%" alt="">
+						</div>
+						<div class="col-xs-9">
+							<p class="title">都仕雅阁 (朝阳大悦店)</p>
+							<p class="techn">中级技师 小李</p>
+							<p class="type">都仕雅阁精油按摩SPA套餐 <span>￥459</span></p>
+						</div>
+						<span class="detail"></span>
+					</a>
 				</div>
 			</li>
 			<li class="bg_li">
@@ -89,22 +92,30 @@
 					</div>
 				</div>
 				<div class="info cf">
-					<div class="col-xs-3">
-						<img src="../static/images/head.jpg" width="80%" alt="">
-					</div>
-					<div class="col-xs-9">
-						<p class="title">都仕雅阁 (朝阳大悦店)</p>
-						<p class="techn">中级技师 小李</p>
-						<p class="type">都仕雅阁精油按摩SPA套餐 <span>￥459</span></p>
-					</div>
-					<span class="detail"></span>
+					<a href="order_info.html">
+						<div class="col-xs-3">
+							<img src="../static/images/head.jpg" width="80%" alt="">
+						</div>
+						<div class="col-xs-9">
+							<p class="title">都仕雅阁 (朝阳大悦店)</p>
+							<p class="techn">中级技师 小李</p>
+							<p class="type">都仕雅阁精油按摩SPA套餐 <span>￥459</span></p>
+						</div>
+						<span class="detail"></span>
+					</a>
 				</div>
 			</li>
 		</ul>
 	</article>
-	<div class="order_success">
+	<div class="order_success" id="order_success" style="display:none;">
 		<span class="ok"><img src="../static/images/icon/icon_w_right.png" width="80%" alt=""></span>
 		<p>订单支付成功！</p>
 	</div>
+	<script type="text/javascript">
+		setTimeout(function(){
+			document.getElementById('order_success').style.display = 'block';
+		},2000);
+	</script>
+	
 </body>
 </html>
